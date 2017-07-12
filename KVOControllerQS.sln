@@ -1,0 +1,38 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KVOControllerQS", "KVOControllerQS\KVOControllerQS.csproj", "{6064F683-3831-4944-82A2-E903EDA1FF9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Naxam.KVOController.iOS", "Naxam.KVOController.iOS\Naxam.KVOController.iOS.csproj", "{F051F36C-A3E4-4958-A054-5AD4D7C2B8A7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nuget", "nuget", "{8E22A6CF-A6C5-4F21-8F50-2233536D5B96}"
+	ProjectSection(SolutionItems) = preProject
+		kvo.nuspec = kvo.nuspec
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhone = Release|iPhone
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6064F683-3831-4944-82A2-E903EDA1FF9C}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{6064F683-3831-4944-82A2-E903EDA1FF9C}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{6064F683-3831-4944-82A2-E903EDA1FF9C}.Release|iPhone.ActiveCfg = Release|iPhone
+		{6064F683-3831-4944-82A2-E903EDA1FF9C}.Release|iPhone.Build.0 = Release|iPhone
+		{6064F683-3831-4944-82A2-E903EDA1FF9C}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{6064F683-3831-4944-82A2-E903EDA1FF9C}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{6064F683-3831-4944-82A2-E903EDA1FF9C}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{6064F683-3831-4944-82A2-E903EDA1FF9C}.Debug|iPhone.Build.0 = Debug|iPhone
+		{F051F36C-A3E4-4958-A054-5AD4D7C2B8A7}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{F051F36C-A3E4-4958-A054-5AD4D7C2B8A7}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{F051F36C-A3E4-4958-A054-5AD4D7C2B8A7}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{F051F36C-A3E4-4958-A054-5AD4D7C2B8A7}.Release|iPhone.Build.0 = Release|Any CPU
+		{F051F36C-A3E4-4958-A054-5AD4D7C2B8A7}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{F051F36C-A3E4-4958-A054-5AD4D7C2B8A7}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{F051F36C-A3E4-4958-A054-5AD4D7C2B8A7}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{F051F36C-A3E4-4958-A054-5AD4D7C2B8A7}.Debug|iPhone.Build.0 = Debug|Any CPU
+	EndGlobalSection
+EndGlobal

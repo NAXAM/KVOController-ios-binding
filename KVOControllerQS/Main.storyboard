@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YPV-yf-8VG" misplaced="YES">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="oCO-f6-tEO"/>
+                                    <barButtonItem systemItem="play" id="eOK-jb-Hop">
+                                        <connections>
+                                            <action selector="DidTapPlay:" destination="BYZ-38-t0r" id="3"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="1RF-ro-kpC"/>
+                                    <barButtonItem systemItem="rewind" id="dIO-Se-oUv">
+                                        <connections>
+                                            <action selector="DidTapRewind:" destination="BYZ-38-t0r" id="4"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="T4c-VL-qK4"/>
+                                    <barButtonItem systemItem="fastForward" id="BZO-8x-tAN">
+                                        <connections>
+                                            <action selector="DidTapFastForward:" destination="BYZ-38-t0r" id="5"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="AXk-Qw-ANm"/>
+                                </items>
+                            </toolbar>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="qCM-Ds-oFF" misplaced="YES">
+                                <rect key="frame" x="18" y="573" width="339" height="31"/>
+                            </slider>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oy3-Q8-NOl" misplaced="YES" image="MusicPlayer_Default.png">
+                                <rect key="frame" x="113" y="259" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="oy3-Q8-NOl" secondAttribute="height" multiplier="1:1" id="1Az-2y-ycz"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="YPV-yf-8VG" secondAttribute="bottom" id="2GJ-HT-NJi"/>
+                            <constraint firstItem="qCM-Ds-oFF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="8cO-pN-fSD"/>
+                            <constraint firstItem="oy3-Q8-NOl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="922-FG-ToA"/>
+                            <constraint firstItem="oy3-Q8-NOl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CQh-QU-ndc"/>
+                            <constraint firstItem="YPV-yf-8VG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="NnG-fv-okp"/>
+                            <constraint firstItem="YPV-yf-8VG" firstAttribute="top" secondItem="qCM-Ds-oFF" secondAttribute="bottom" constant="20" id="SKU-xO-SdH"/>
+                            <constraint firstAttribute="trailing" secondItem="YPV-yf-8VG" secondAttribute="trailing" id="WOl-tr-epl"/>
+                            <constraint firstItem="oy3-Q8-NOl" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.4" id="nda-h1-YxW"/>
+                            <constraint firstAttribute="trailing" secondItem="qCM-Ds-oFF" secondAttribute="trailing" constant="20" id="wA1-Zz-kJr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="DiscIV" destination="oy3-Q8-NOl" id="name-outlet-oy3-Q8-NOl"/>
+                        <outlet property="TimeSlider" destination="qCM-Ds-oFF" id="name-outlet-qCM-Ds-oFF"/>
+                        <outlet property="ControlToolbar" destination="YPV-yf-8VG" id="name-outlet-YPV-yf-8VG"/>
+                        <outlet property="_PlayItem" destination="eOK-jb-Hop" id="name-outlet-eOK-jb-Hop"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="123.6882"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="MusicPlayer_Default.png" width="320" height="320"/>
+    </resources>
+</document>
